@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyber Hive | Coaching Centre</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Hanken+Grotesk:wght@400;500&display=swap">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><img class="mark" src="logo.png" alt="Cyber Hive Tutorials logo" width="64" height="64">Cyber Hive</a>
+    <nav class="nav">
+      <a class="l" href="#programs">Programs</a>
+      <a class="l" href="#boards">Boards</a>
+      <a class="btn wa" href="#contact">Book a demo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Learn with the hive behind you.</h1>
+      <p>Small batches, expert mentors and weekly progress checks for students in grades 6 to 12.</p>
+      <div class="acts">
+        <a class="btn wa" href="#contact">Book a free demo class</a>
+        <a class="btn ghost" href="#programs">See programs</a>
+      </div>
+    </div>
+    <div class="cluster" aria-label="Subjects taught at Cyber Hive">
+      <div class="row3"><div class="hex"><span>Maths</span></div><div class="hex"><span>Chemistry</span></div></div>
+      <div class="row3"><div class="hex"><span>Biology</span></div><div class="hex core"><span>Your seat</span></div><div class="hex"><span>History</span></div></div>
+      <div class="row3"><div class="hex"><span>Geography</span></div><div class="hex"><span>SST</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="programs">
+  <div class="wrap">
+    <h2>Programs</h2>
+    <div class="prog"><h3>Foundation</h3><p class="who">Grades 6 to 8</p><p>Clear concepts in maths, science and social studies before the syllabus gets heavy.</p></div>
+    <div class="prog"><h3>Board Excellence</h3><p class="who">Grades 9 to 12</p><p>Chapter-wise teaching in all six subjects and daily doubt sessions.</p></div>
+    <div class="prog"><h3>Competitive Exams</h3><p class="who">Grades 11 and 12, repeaters</p><p>Entrance exam tracks with full-length mock tests and detailed analysis.</p></div>
+  </div>
+</section>
+
+<section class="sec soft" id="boards">
+  <div class="wrap">
+    <h2>Choose your board</h2>
+    <div class="pick" role="tablist" aria-label="Board">
+      <button type="button" role="tab" aria-selected="true" data-t="cbse" data-b="CBSE">CBSE</button>
+      <button type="button" role="tab" aria-selected="false" data-t="icse" data-b="ICSE / ISC">ICSE / ISC</button>
+    </div>
+    <div class="panes">
+      <div class="pane show" id="p-cbse" role="tabpanel">
+        <div><h3>CBSE</h3><p class="who">Grades 6 to 12</p><p>NCERT-based teaching with sample papers and past-year practice.</p></div>
+        <div>
+          <div class="chips"><span>Maths</span><span>Physics</span><span>Chemistry</span><span>Biology</span><span>Computer</span><span>History</span><span>Geography</span><span>SST</span></div>
+          <ul class="pts"><li>Chapter-wise classes that follow the school syllabus</li><li>Doubt sessions before every exam</li></ul>
+          <a class="btn wa" data-b="CBSE" href="#contact">Book a demo for CBSE</a>
+        </div>
+      </div>
+      <div class="pane" id="p-icse" role="tabpanel">
+        <div><h3>ICSE / ISC</h3><p class="who">ICSE grades 6 to 10, ISC grades 11 and 12</p><p>Depth-first teaching with plenty of long-answer writing practice.</p></div>
+        <div>
+          <div class="chips"><span>Maths</span><span>Physics</span><span>Chemistry</span><span>Biology</span><span>Computer</span><span>History</span><span>Geography</span></div>
+          <ul class="pts"><li>Chapter-wise classes that follow the council syllabus</li><li>Answer-writing sessions for history and geography</li></ul>
+          <a class="btn wa" data-b="ICSE / ISC" href="#contact">Book a demo for ICSE / ISC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Book a free demo class</h2>
+      <p>Send us the details on WhatsApp and we will reply to fix a time.</p>
+      <div class="info">
+        <p>Rajdanga Main Road, Kasba, Kolkata-700107</p>
+        <p>WhatsApp: +91 82403 75770</p>
+        <p>Monday to Saturday, 8 am to 8 pm</p>
+      </div>
+    </div>
+    <form id="f">
+      <label>Student name<input name="name" required autocomplete="name"></label>
+      <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+      <label>Board<select id="bd" name="board"><option>CBSE</option><option>ICSE / ISC</option></select></label>
+      <label>Grade<select name="grade"><option>6 to 8</option><option>9 and 10</option><option>11 and 12</option></select></label>
+      <div class="ms" id="ms">
+        <span>Subjects</span>
+        <button type="button" class="msb" id="msb" aria-expanded="false" aria-controls="msl"><span id="msv">Choose subjects</span></button>
+        <div class="msl" id="msl" hidden><div class="msg">
+          <label class="all"><input type="checkbox" id="selall">All subjects</label>
+          <label><input class="s" type="checkbox" value="Maths">Maths</label>
+          <label><input class="s" type="checkbox" value="Physics">Physics</label>
+          <label><input class="s" type="checkbox" value="Chemistry">Chemistry</label>
+          <label><input class="s" type="checkbox" value="Biology">Biology</label>
+          <label><input class="s" type="checkbox" value="Computer">Computer</label>
+          <label><input class="s" type="checkbox" value="History">History</label>
+          <label><input class="s" type="checkbox" value="Geography">Geography</label>
+          <label class="sst"><input class="s" type="checkbox" value="SST">SST</label>
+        </div></div>
+      </div>
+      <button class="btn" type="submit">Book demo class</button>
+      <p class="ok" id="ok" hidden>Almost done. Send the message in WhatsApp to confirm your demo class. Not opening? <a id="wl" target="_blank" rel="noopener">Open the WhatsApp app</a> or <a id="ww" target="_blank" rel="noopener">use WhatsApp Web</a>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><img class="flogo" src="logo.png" alt="Cyber Hive Tutorials logo" width="96" height="96"><span>Cyber Hive Tutorials</span><span>&copy; <span id="y">2026</span> All rights reserved</span></div>
+</footer>
+
+<script>
+document.querySelectorAll('.chips span').forEach(function(c,i){c.style.setProperty('--i',i)});
+var tabs=document.querySelectorAll('.pick button');
+tabs.forEach(function(t){t.addEventListener('click',function(){
+tabs.forEach(function(x){x.setAttribute('aria-selected',x===t)});
+document.querySelectorAll('.pane').forEach(function(p){p.classList.toggle('show',p.id==='p-'+t.dataset.t)});
+document.getElementById('bd').value=t.dataset.b;syncBoard();
+})});
+if('IntersectionObserver' in window){
+document.documentElement.classList.add('js');
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.sec h2,.prog,.pick,.panes,.info,.contact .wrap>div>p,.contact form').forEach(function(el){el.classList.add('rv');io.observe(el)});
+}
+document.getElementById('y').textContent=new Date().getFullYear();
+var msb=document.getElementById('msb'),msl=document.getElementById('msl'),boxes=msl.querySelectorAll('input.s'),selAll=document.getElementById('selall');
+function subjects(){return Array.prototype.filter.call(boxes,function(b){return b.checked}).map(function(b){return b.value})}
+function vis(){return Array.prototype.filter.call(boxes,function(b){return !b.closest('label').hidden})}
+function showSubj(){var v=subjects(),w=vis();selAll.checked=w.length>0&&w.every(function(b){return b.checked});document.getElementById('msv').textContent=selAll.checked?'All subjects':(v.length?v.join(', '):'Choose subjects')}
+function syncBoard(){var l=document.querySelector('.sst'),s=l.querySelector('input'),was=selAll.checked,off=document.getElementById('bd').value!=='CBSE';l.hidden=off;if(off)s.checked=false;else if(was)s.checked=true;showSubj()}
+function closeMs(){msl.hidden=true;msb.setAttribute('aria-expanded','false')}
+msb.addEventListener('click',function(){var o=msl.hidden;msl.hidden=!o;msb.setAttribute('aria-expanded',o)});
+boxes.forEach(function(b){b.addEventListener('change',showSubj)});
+selAll.addEventListener('change',function(){vis().forEach(function(b){b.checked=selAll.checked});showSubj()});
+document.getElementById('bd').addEventListener('change',syncBoard);
+document.addEventListener('click',function(e){if(!document.getElementById('ms').contains(e.target))closeMs()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMs()});
+var mob=/Android|iPhone|iPad|iPod|Mobi/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/i.test(navigator.userAgent));
+function wapp(t){return 'https://api.whatsapp.com/send?phone=918240375770&text='+encodeURIComponent(t)}
+function wweb(t){return 'https://web.whatsapp.com/send?phone=918240375770&text='+encodeURIComponent(t)}
+function wa(t){return mob?wapp(t):wweb(t)}
+document.querySelectorAll('a.wa').forEach(function(a){a.href=wa('Hi Cyber Hive, I would like to book a free demo class'+(a.dataset.b?' for '+a.dataset.b:'')+'.');a.target='_blank';a.rel='noopener'});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+var d=new FormData(e.target);
+var m='Hi Cyber Hive, I would like to book a free demo class.\nStudent: '+d.get('name')+'\nBoard: '+d.get('board')+'\nGrade: '+d.get('grade')+'\nSubjects: '+(selAll.checked?'All subjects ('+subjects().join(', ')+')':(subjects().join(', ')||'Not sure yet'))+'\nPhone: '+d.get('phone');
+var u=wa(m);
+document.getElementById('wl').href=wapp(m);document.getElementById('ww').href=wweb(m);
+document.getElementById('ok').hidden=false;
+window.open(u,'_blank','noopener');
+e.target.reset();showSubj();syncBoard()});
+(function(){
+if(!matchMedia('(hover:hover) and (pointer:fine)').matches||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+var d=document.createElement('div');d.className='dot';document.body.appendChild(d);
+document.documentElement.classList.add('cd');
+var I='a,button,label,select,input,.hex',O='.btn:not(.ghost),.pick button[aria-selected="true"],.hex.core';
+function st(el){d.classList.toggle('big',!!el.closest(I));d.classList.toggle('ink',!!el.closest(O))}
+document.addEventListener('mousemove',function(e){d.style.transform='translate3d('+e.clientX+'px,'+e.clientY+'px,0)';d.classList.add('on');st(e.target)});
+document.addEventListener('click',function(e){st(e.target)});
+document.documentElement.addEventListener('mouseleave',function(){d.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
